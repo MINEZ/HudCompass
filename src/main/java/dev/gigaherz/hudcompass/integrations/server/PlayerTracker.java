@@ -90,10 +90,11 @@ public class PlayerTracker
                 addon.players.put(uuid, wp);
                 addon.teams.put(uuid, target.getTeam());
                 addon.playerTeam = player.getTeam();
-                if (ConfigData.playerDisplay == ConfigData.PlayerDisplay.ALL || (ConfigData.playerDisplay == ConfigData.PlayerDisplay.TEAM && target.getTeam() == player.getTeam()))
-                {
-                    worldPoints.addPoint(wp);
-                }
+                // No player displays
+                //if (ConfigData.playerDisplay == ConfigData.PlayerDisplay.ALL || (ConfigData.playerDisplay == ConfigData.PlayerDisplay.TEAM && target.getTeam() == player.getTeam()))
+                //{
+                //    worldPoints.addPoint(wp);
+                //}
             });
         }
     }

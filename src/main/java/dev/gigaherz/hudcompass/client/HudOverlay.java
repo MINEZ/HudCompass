@@ -138,10 +138,10 @@ public class HudOverlay implements IGuiOverlay
 
         //drawCenteredString(font, String.format("%f", yaw), xPos, 28, 0xFFFFFF);
 
-        drawCardinalDirection(graphics, yaw, 0, xPos, "S");
-        drawCardinalDirection(graphics, yaw, 90, xPos, "W");
-        drawCardinalDirection(graphics, yaw, 180, xPos, "N");
-        drawCardinalDirection(graphics, yaw, 270, xPos, "E");
+        drawCardinalDirection(graphics, yaw, 0, xPos, "南");
+        drawCardinalDirection(graphics, yaw, 90, xPos, "西");
+        drawCardinalDirection(graphics, yaw, 180, xPos, "北");
+        drawCardinalDirection(graphics, yaw, 270, xPos, "东");
 
         fillRect(graphics, xPos - 1.5f, 10, xPos - 0.5f, 18, 0x3FFFFFFF);
         fillRect(graphics, xPos + 0.5f, 10, xPos + 1.5f, 18, 0x3FFFFFFF);
